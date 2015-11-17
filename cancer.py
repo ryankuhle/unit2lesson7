@@ -5,3 +5,12 @@ Solve: If 10,000 women in this age group undergo a routine screening, about what
 
 Answer: 7.8%
 '''
+
+total_woman = 10000
+woman_w_cancer = int(total_woman * .01)
+pos_mammogram_w_cancer = int(woman_w_cancer * .8)
+pos_mammogram_without_cancer = int((total_woman - woman_w_cancer) * .096)
+
+print "Women with cancer: %s" % woman_w_cancer
+print "Women with cancer and positive mammogram: %s" % pos_mammogram_w_cancer
+print "Women without cancer and positive mammogram: %s" % pos_mammogram_without_cancer
